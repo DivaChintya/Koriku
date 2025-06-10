@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/catAngka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/angka"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <ImageView
+        android:id="@+id/catHuruf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/huruf"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <ImageView
+        android:id="@+id/catTransportasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/transportasi"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <ImageView
+        android:id="@+id/catBuah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/buah"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <ImageView
+        android:id="@+id/catHewan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hewan"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="629dp" />
+
+    <ImageView
+        android:id="@+id/catPercakapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/percakapan"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="629dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
