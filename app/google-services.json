@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "779517573264",
+    "project_id": "koriku-v1",
+    "storage_bucket": "koriku-v1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779517573264:android:fb902d974da15581394015",
+        "android_client_info": {
+          "package_name": "com.example.apl_koriko"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKG-MsW-QkKp3HKC19vIiU8qlwBVlFF-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
