@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "779517573264",
-    "project_id": "koriku-v1",
-    "storage_bucket": "koriku-v1.firebasestorage.app"
+    "project_number": "781061285391",
+    "project_id": "koriko-6e5ab",
+    "storage_bucket": "koriko-6e5ab.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:779517573264:android:fb902d974da15581394015",
+        "mobilesdk_app_id": "1:781061285391:android:e42215c075d5eb09e0e57a",
         "android_client_info": {
           "package_name": "com.example.apl_koriko"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBKG-MsW-QkKp3HKC19vIiU8qlwBVlFF-I"
+          "current_key": "AIzaSyBDKdBdGA15hoKDcPFDA_CQCEKlu0VfhDQ"
         }
       ],
       "services": {
