@@ -58,4 +58,5 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
     implementation ("androidx.viewpager2:viewpager2:1.0.0") // untuk card yang bisa digeser (swipe)
+    implementation ("androidx.gridlayout:gridlayout:1.0.0")
 }

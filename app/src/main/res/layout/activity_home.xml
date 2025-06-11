@@ -1,55 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/catAngka"
-        android:layout_width="wrap_content"
+    <!-- Kolom Kiri -->
+    <LinearLayout
+        android:id="@+id/columnLeft"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/angka"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="148dp" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/columnRight"
+        app:layout_constraintVertical_chainStyle="spread">
 
-    <ImageView
-        android:id="@+id/catHuruf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/huruf"
-        tools:layout_editor_absoluteX="240dp"
-        tools:layout_editor_absoluteY="148dp" />
+        <!-- Angka -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
 
-    <ImageView
-        android:id="@+id/catTransportasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/transportasi"
-        tools:layout_editor_absoluteX="240dp"
-        tools:layout_editor_absoluteY="397dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/angka" />
 
-    <ImageView
-        android:id="@+id/catBuah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/buah"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="397dp" />
 
-    <ImageView
-        android:id="@+id/catHewan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/hewan"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="629dp" />
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/catPercakapan"
-        android:layout_width="wrap_content"
+        <!-- Buah -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/buah" />
+
+        </LinearLayout>
+
+        <!-- Hewan -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hewan" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Kolom Kanan -->
+    <LinearLayout
+        android:id="@+id/columnRight"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/percakapan"
-        tools:layout_editor_absoluteX="240dp"
-        tools:layout_editor_absoluteY="629dp" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/columnLeft">
+
+        <!-- Huruf -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/huruf" />
+
+        </LinearLayout>
+
+        <!-- Transportasi -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/transportasi" />
+
+        </LinearLayout>
+
+        <!-- Percakapan -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/percakapan" />
+
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
