@@ -9,6 +9,8 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import com.google.firebase.auth.FirebaseAuth
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -19,10 +21,14 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var progressBar: ProgressBar
     private lateinit var signInText: TextView
     private lateinit var imageView: ImageView
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
+        // Inisialisasi Firebase Auth
+        auth = FirebaseAuth.getInstance()
 
         // Initialize views
         editName = findViewById(R.id.editName)
@@ -39,9 +45,10 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         signInText.setOnClickListener {
-            // Navigate to Sign In screen (if implemented)
-            // startActivity(Intent(this, SignInActivity::class.java))
             Toast.makeText(this, "Redirect to Sign In", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 
@@ -61,22 +68,20 @@ class RegisterActivity : AppCompatActivity() {
             return
         }
 
-        // Here you would typically call an API or save data to a database
-        // For example, registering the user in Firebase or your backend service
+        auth.createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                progressBar.visibility = View.INVISIBLE
+                if (task.isSuccessful) {
+                    Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show()
 
-        // Simulate a successful registration
-        simulateRegistration()
+                    // Arahkan ke LoginActivity
+                    val intent = Intent(this, LoginActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                } else {
+                    Toast.makeText(this, "Registration failed: ${task.exception?.message}", Toast.LENGTH_LONG).show()
+                }
+            }
     }
 
-    private fun simulateRegistration() {
-        // Simulate some background task, like an API call
-        progressBar.postDelayed({
-            progressBar.visibility = View.INVISIBLE
-            Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show()
-
-            // Optionally, navigate to another screen after success
-            // startActivity(Intent(this, HomeActivity::class.java))
-            finish() // Close the RegisterActivity and go back
-        }, 2000) // Simulated delay of 2 seconds
-    }
 }
