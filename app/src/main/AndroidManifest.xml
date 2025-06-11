@@ -33,6 +33,30 @@
         <activity
             android:name=".HomeActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".AngkaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".HurufActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".BuahActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".TransportasiActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".HewanActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".PercakapanActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
