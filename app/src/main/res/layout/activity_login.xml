@@ -70,7 +70,7 @@
 
 
         <Button
-            android:id="@+id/register"
+            android:id="@+id/login"
             android:layout_width="340dp"
             android:layout_height="48dp"
             android:layout_margin="12dp"
@@ -96,11 +96,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already Registered? "
+                android:text="Don't Have an Account? "
                 android:textSize="12dp" />
 
             <TextView
-                android:id="@+id/signin"
+                android:id="@+id/signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign Up"

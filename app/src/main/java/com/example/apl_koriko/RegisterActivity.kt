@@ -45,9 +45,10 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         signInText.setOnClickListener {
-            // Navigate to Sign In screen (if implemented)
-            // startActivity(Intent(this, SignInActivity::class.java))
             Toast.makeText(this, "Redirect to Sign In", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 
