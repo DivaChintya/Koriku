@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Apl_KORIKO"
         tools:targetApi="31">
+
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
@@ -21,41 +22,68 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
-
         <activity
             android:name=".HomeActivity"
             android:exported="true" />
-
         <activity
             android:name=".AngkaActivity"
             android:exported="true" />
-
+        <activity
+            android:name=".AngkaActivity1"
+            android:exported="true" />
+        <activity
+            android:name=".AngkaActivity2"
+            android:exported="true" />
         <activity
             android:name=".HurufActivity"
             android:exported="true" />
-
+        <activity
+            android:name=".HurufActivity1"
+            android:exported="true" />
+        <activity
+            android:name=".HurufActivity2"
+            android:exported="true" />
         <activity
             android:name=".BuahActivity"
             android:exported="true" />
-
+        <activity
+            android:name=".BuahActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".BuahActivity1"
+            android:exported="true" />
         <activity
             android:name=".TransportasiActivity"
             android:exported="true" />
-
+        <activity
+            android:name=".TransportasiActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".TransportasiActivity1"
+            android:exported="true" />
         <activity
             android:name=".HewanActivity"
             android:exported="true" />
-
+        <activity
+            android:name=".HewanActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".HewanActivity1"
+            android:exported="true" />
         <activity
             android:name=".PercakapanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PercakapanActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".PercakapanActivity1"
             android:exported="true" />
     </application>
 

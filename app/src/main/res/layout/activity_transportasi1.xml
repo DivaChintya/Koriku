@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/cardMobil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/trans_jadongcha"
@@ -14,7 +14,7 @@
         tools:layout_editor_absoluteY="183dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/nextMobil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/button_next"

@@ -1,11 +1,20 @@
 package com.example.apl_koriko
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class HurufActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_huruf1)
+
+        val nextButton = findViewById<ImageView>(R.id.nextA)
+
+        nextButton.setOnClickListener {
+            val intent = Intent(this, HurufActivity1::class.java)
+            startActivity(intent)
+        }
     }
 }

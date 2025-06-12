@@ -6,18 +6,19 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/cardBurung"
+        android:id="@+id/cardJeruk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/hewan_sae"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="205dp" />
+        app:srcCompat="@drawable/buah_sagwa"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="173dp" />
 
     <ImageView
-        android:id="@+id/nextBurung"
+        android:id="@+id/nextHomeB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/button_next"
-        tools:layout_editor_absoluteX="264dp"
-        tools:layout_editor_absoluteY="738dp" />
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="752dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
