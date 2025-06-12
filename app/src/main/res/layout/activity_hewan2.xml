@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/cardBurung"
+        android:id="@+id/cardKucing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/hewan_sae"
@@ -14,10 +14,11 @@
         tools:layout_editor_absoluteY="205dp" />
 
     <ImageView
-        android:id="@+id/nextBurung"
+        android:id="@+id/nextKucing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/button_next"
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="738dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
