@@ -10,9 +10,15 @@ class BuahActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_buah1)
 
-        val nextButton = findViewById<ImageView>(R.id.nextApel)
+        val nextButton = findViewById<ImageView>(R.id.next)
         nextButton.setOnClickListener {
             val intent = Intent(this, BuahActivity1::class.java)
+            startActivity(intent)
+        }
+
+        val homeButton = findViewById<ImageView>(R.id.nextHomeH)
+        homeButton.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
     }

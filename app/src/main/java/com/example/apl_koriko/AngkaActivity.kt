@@ -10,10 +10,15 @@ class AngkaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_angka1)
 
-        val nextButton = findViewById<ImageView>(R.id.nextSatu)
-
+        val nextButton = findViewById<ImageView>(R.id.next)
         nextButton.setOnClickListener {
             val intent = Intent(this, AngkaActivity1::class.java)
+            startActivity(intent)
+        }
+
+        val homeButton = findViewById<ImageView>(R.id.nextHomeH)
+        homeButton.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
     }

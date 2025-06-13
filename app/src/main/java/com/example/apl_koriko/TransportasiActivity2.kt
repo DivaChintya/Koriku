@@ -10,10 +10,15 @@ class TransportasiActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_transportasi3)
 
-        val nextButton = findViewById<ImageView>(R.id.nextHomeT)
-
+        val nextButton = findViewById<ImageView>(R.id.nextHomeH)
         nextButton.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
+        val prevButton = findViewById<ImageView>(R.id.prev)
+        prevButton.setOnClickListener {
+            val intent = Intent(this, TransportasiActivity1::class.java)
             startActivity(intent)
         }
     }

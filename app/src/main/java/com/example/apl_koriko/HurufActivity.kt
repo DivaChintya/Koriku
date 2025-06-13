@@ -11,9 +11,14 @@ class HurufActivity : AppCompatActivity() {
         setContentView(R.layout.activity_huruf1)
 
         val nextButton = findViewById<ImageView>(R.id.nextA)
-
         nextButton.setOnClickListener {
             val intent = Intent(this, HurufActivity1::class.java)
+            startActivity(intent)
+        }
+
+        val homeButton = findViewById<ImageView>(R.id.nextHomeH)
+        homeButton.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
     }

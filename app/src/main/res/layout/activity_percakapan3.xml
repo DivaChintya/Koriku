@@ -5,20 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/cardHalo3"
+    <ImageButton
+        android:id="@+id/nextHomeH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/perc_halo"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="168dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/back_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/button_sound"
+        app:layout_constraintBottom_toTopOf="@+id/card_hangul_eo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/nextHomeP"
+        android:id="@+id/card_hangul_eo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/button_next"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="696dp" />
+        android:adjustViewBounds="true"
+        android:src="@drawable/perc_maaf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/button_previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
