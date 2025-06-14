@@ -1,11 +1,15 @@
 package com.example.apl_koriko
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class HurufActivity2 : AppCompatActivity() {
+
+    private var mediaPlayer: MediaPlayer? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_huruf3)
@@ -20,7 +24,23 @@ class HurufActivity2 : AppCompatActivity() {
         prevButton.setOnClickListener {
             val intent = Intent(this, HurufActivity1::class.java)
             startActivity(intent)
-
         }
+
+        val soundButton = findViewById<ImageView>(R.id.button_sound)
+        soundButton.setOnClickListener {
+            playSound(R.raw.huruf_eo)
+        }
+    }
+
+    private fun playSound(resId: Int) {
+        mediaPlayer?.release()
+        mediaPlayer = MediaPlayer.create(this, resId)
+        mediaPlayer?.start()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mediaPlayer?.release()
+        mediaPlayer = null
     }
 }
